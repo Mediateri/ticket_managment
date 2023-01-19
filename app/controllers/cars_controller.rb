@@ -1,5 +1,6 @@
 class CarsController < ApplicationController
   before_action :set_car, only: [:show, :update, :destroy]
+  before_action :authorize_request
 
   # GET /cars
   def index

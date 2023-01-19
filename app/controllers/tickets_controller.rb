@@ -1,5 +1,6 @@
 class TicketsController < ApplicationController
   before_action :set_ticket, only: [:show, :update, :destroy]
+  before_action :authorize_request
 
   # GET /tickets
   def index
