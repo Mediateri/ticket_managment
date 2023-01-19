@@ -1,5 +1,6 @@
 class SchedulesController < ApplicationController
   before_action :set_schedule, only: [:show, :update, :destroy]
+  before_action :authorize_request
 
   # GET /schedules
   def index
